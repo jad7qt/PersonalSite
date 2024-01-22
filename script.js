@@ -12,3 +12,8 @@ function opentab(tabname){
     document.getElementById(`${tabname}-title`).classList.add("active-link");
     document.getElementById(tabname).classList.add("active-content");
 }
+
+addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY>0)
+});

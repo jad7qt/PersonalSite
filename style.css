@@ -18,27 +18,41 @@ body{
 .container{
     padding: 10px 10%;
 }
-nav{
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    transition: 0.6s;
+    padding: 10px 10%;
 }
-
-nav ul li{
+header.sticky{
+    padding: 5px 10%;
+    background-color: #fff;
+}
+header ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
-
 }
-
-nav ul li a{
+header ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     position: relative;
+    font-weight: bold;
 }
-
+header.sticky ul li a{
+    color: #404040;
+}
+header .logo{
+    position: relative;
+    transition: 0.6s;
+}
 nav ul li a::after{
     content: '';
     width: 0;
