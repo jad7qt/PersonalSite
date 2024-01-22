@@ -181,6 +181,7 @@ nav ul li a:hover::after{
     display: flex;
     align-items: center;
     justify-items: center;
+    justify-content: center;
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
@@ -192,6 +193,7 @@ nav ul li a:hover::after{
     margin-bottom: 20px;
 }
 .layer a{
+    display: flex;
     margin-top: 20px;
     color: #ff004f;
     text-decoration: none;
@@ -202,6 +204,8 @@ nav ul li a:hover::after{
     height: 60px;
     border-radius: 50%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .work:hover img{
     transform: scale(1.1);
